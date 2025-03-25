@@ -1,0 +1,539 @@
+
+
+body{
+    background-image: url("../images/what-the-hex-dark.png");
+}
+
+
+
+header {
+    background-image: url("../images/what-the-hex-dark.png");
+    background-size: 400px 400px;
+    background-position: -50px -50px;
+}
+
+
+
+.informations {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, transparent 150%);
+    color: #eee;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .informations{
+        padding: 10px;
+    }
+}
+
+
+.informations-info {
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .informations-info{
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+
+.all-students {
+    background-color: #52436e;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .all-students {
+        font-weight: normal;
+        font-size: 12px;
+        padding: 6px;
+        border-radius: 4px;
+        text-align: center;
+    }
+}
+
+
+.charts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+@media (min-width: 1200px) {
+    .charts{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+
+.chartDiv{
+    flex-shrink: 1;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+
+@media (min-width: 1200px) {
+    .chartDiv{
+        width: calc(50% - 10px);
+    }
+}
+
+.classChartDiv{
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgb(178, 18, 18) 0%, rgb(111, 0, 0) 90% );    
+}
+
+.merkezlerChartDiv{
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  #7c560f 0%, #503607 90% );    
+}
+
+.bursChartDiv{
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  #20558d 0%, #062f5c 90% );    
+}
+
+.akademikChartDiv{
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  #22924b 0%, #045c24 90% );    
+
+}
+
+.chartDiv > h1{
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px #ccc solid;
+}
+
+.classChartDiv > h1 {
+    border-color: #600500;
+}
+
+.merkezlerChartDiv > h1 {
+    border-color: #523500;
+}
+
+.bursChartDiv > h1 {
+    border-color: #002853;
+}
+
+.akademikChartDiv > h1 {
+    border-color: #00532b;
+}
+
+@media (min-width: 1200px) {
+    .chartDiv > h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .chartDiv > h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 620px) {
+    .chartDiv > h1{
+        font-size: 18px;
+    }
+}
+
+.chart {
+    padding: 25px;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 0 auto ;
+}
+
+
+
+@media (min-width: 768px) {
+    .bursChart,
+    .akademikChart{
+        padding: 10px 25% 15px;
+    }
+}
+
+.charts .table{
+    margin-top: 20px;
+    transition: height 0.3s;
+    position: relative;
+}
+
+.charts .tableIcon{
+    position: relative;
+    height: 45px;
+    width: 100%; 
+    padding: 0 20px 0 0;
+    color: #cccccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.charts .classChartDiv .tableIcon {
+    background-color: #600500;
+}
+
+.charts .merkezlerChartDiv .tableIcon {
+    background-color: #523500;
+}
+
+.charts .bursChartDiv .tableIcon {
+    background-color: #002853;
+}
+
+.charts .akademikChartDiv .tableIcon {
+    background-color: #00532b;
+}
+
+
+.charts .tableIcon span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@media (max-width: 530px){
+    .charts .tableIcon span{
+        left: 10px;
+        transform: translateX(0);
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 455px) {
+    .charts .tableIcon span{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 430px) {
+    .charts .tableIcon span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 410px) {
+    .charts .tableIcon span{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 386px) {
+    .charts .tableIcon span{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .charts .tableIcon span{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .charts .tableIcon span{
+        font-size: 9px;
+    }
+}
+
+
+
+
+/* --------------Table Info------------- */
+
+.modal {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content{
+    background-color: #eee;
+    margin: 5% auto; 
+    padding: 10px 20px 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-head {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.modal-head .download {
+    padding: 5px;
+    background-color: #c2b99f;
+    color: #333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.modal-head .download:hover {
+    background-color: #c0ae79;
+}
+
+.modal-head .download svg{
+    width: 15px;
+    fill: #333;
+}
+
+
+.modal-content #modal-title{
+    font-size: 18px;
+}
+
+
+.modal-head .modal-close {
+    width: 20px;
+    fill: #aaa;
+    transition: 0.2s;
+}
+
+.modal-head .modal-close:hover,
+.modal-head .modal-close:focus {
+    fill: #000;
+    cursor: pointer;
+}
+
+
+.modal-content .modal-table{
+    overflow: auto;
+    min-width: 100%;
+}
+
+.modal-content .modal-table table{
+    border-spacing: 0;
+    width: 100%;
+}
+
+.modal-content table th{
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 8px;
+    font-weight: 600;
+    background-color: #cab57b;
+    border: 1px solid #a88f4b
+}
+
+.modal-content table td{
+    font-size: 14px;
+    background-color: #ddd;
+    border: 1px solid #cccccc;
+    padding: 5px 8px;
+    white-space: nowrap;
+}
+
+
+
+@media (max-width: 1200px) {
+    .modal-content table th,
+    .modal-content table td {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 992px) {
+    .modal-content #modal-title{
+        font-size: 16px;
+    }
+
+    .modal-content .download span {
+        font-size: 14px;
+    }
+
+    .modal-content .download svg {
+        width: 14px;
+    }
+
+    .modal-content table th,
+    .modal-content table td {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 880px) {
+    .modal-content .download {
+        padding: 4px 5px;
+    }
+
+    .modal-content .download span {
+        font-size: 13px;
+    }
+
+    .modal-content .download svg {
+        width: 13px;
+    }
+
+    .modal-head .modal-close {
+        width: 18px;
+    }
+
+    .modal-content table th,
+    .modal-content table td {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-content {
+        width: 90%;
+        padding: 10px;
+    }
+    .modal-content #modal-title{
+        font-size: 14px;
+    }
+
+    .modal-content .download {
+        padding: 3px 5px;
+    }
+
+    .modal-content .download span {
+        font-size: 12px;
+    }
+
+    .modal-content .download svg {
+        width: 11px;
+    }
+
+    .modal-head .modal-close {
+        width: 16px;
+    }
+
+    .modal-content table th,
+    .modal-content table td {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+}
+
+@media (max-width: 580px){
+    .modal-head .modal-close {
+        width: 14px;
+    }
+
+    .modal-content table th,
+    .modal-content table td {
+        font-size: 9px;
+        padding: 3px 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .modal-content #modal-title{
+        font-size: 12px;
+    }
+
+    .modal-content .download span {
+        font-size: 11px;
+    }
+
+    .modal-content .download svg {
+        width: 10px;
+    }
+
+    .modal-head .modal-close {
+        width: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.charts table{
+    border-spacing: 0;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
+
+}
+
+
+@media (max-width: 767px) {
+    .chartDiv{
+        padding: 10px;
+    }
+    .chart{
+        padding: 10px;
+    }
+    .bursChart,
+    .akademikChart{
+        padding: 10px 25% 15px;
+    }
+    .charts .table{
+        margin-top: 10px;
+    }
+    .charts .tableIcon{
+        height: 40px;
+        padding: 0 10px 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .bursChart,
+    .akademikChart{
+        padding: 10px 20% 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .akademikChart{
+        padding: 10px 14% 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
