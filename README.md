@@ -24,7 +24,8 @@ Sistem, her şehirdeki öğrencilerin verilerini göstermek için **interaktif b
 ✅ **Kullanıcı Yönetimi (Yalnızca Adminler İçin):** Kullanıcıların yönetimi ve yeni üyelik başvurularını onaylama veya reddetme.  
 
 ## 📁 Proje Yapısı
-/Student-Management-System-In-Turkiye │── /css → CSS dosyaları
+/Student-Management-System-In-Turkiye 
+│── /css → CSS dosyaları
 │── /js → JavaScript dosyaları
 │── /php → Backend PHP dosyaları ve Ana Dosyalar
 │── /img → Görseller ve harita
